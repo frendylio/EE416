@@ -1,0 +1,153 @@
+\documentclass[11pt]{article}
+\usepackage{scribe}
+\usepackage{graphicx}
+
+% Uncomment the appropriate line
+%\Scribe{Your name}
+
+\Scribes{Frendy Lio Can}
+\LectureDate{November 3, 2020}
+\LectureTitle{Homework Assignment \#5}
+
+%\usepackage[mathcal]{euscript}
+
+
+\begin{document}
+
+\MakeScribeTop
+
+%\paragraph{This is a paragraph heading} Paragraph.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% PROBLEM 1 A
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\paragraph{\noindent\textbf{\LARGE{Problem 1, a)}}}
+
+\begin{equation*}
+\begin{split}
+    T(x) = & F^{-1}_d (F_X(x)) \\
+    F_d(x) = & \int \frac{1}{(L-1)-0} (L-1) dx \\
+            = & x \\
+    F_d^{-1}(x) = & x \\
+    F_X(x) = & \int_0^{x} \frac{2x}{L - 1} * (L-1) dx \\
+            = & x^2 \rvert_0^{x} \\ 
+            = & x^2 \\
+    F^{-1}_d (F_X(x)) = & x^2
+\end{split}
+\end{equation*}
+\begin{flushleft}
+    Therefore, $T(x) = x^2$.
+\end{flushleft} 
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% PROBLEM 1 B
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\paragraph{\noindent\textbf{\LARGE{Problem 1, b)}}}  
+\begin{equation*}
+\begin{split}
+    T^\prime(y) = & F^{-1}_d (F_Y(y)) \\
+    F_d(x)  = & \int \frac{3z^2}{(L-1)^3} * (L -1) dz \\
+            = & \frac{1}{(L - 1)^2} *  z^3 \\ 
+            = & \frac{1}{(L - 1)^2} *  z^3 \\
+    F_d^{-1}(x) = & \sqrt[3]{x (L-1)^2 } \\
+    F_X(x) = & \int_0^{x} \frac{1}{L-1} * (L-1) dx \\
+            = & x \\
+    F^{-1}_d (F_X(x)) = & \sqrt[3]{x (L-1)^2 } 
+\end{split}
+\end{equation*}
+\begin{flushleft}
+    Therefore, $T^\prime(y) =(L-1) \sqrt[3]{y (L-1)^2 }$.
+\end{flushleft} 
+        
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% PROBLEM 1 C
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\paragraph{\noindent\textbf{\LARGE{Problem 1, c)}}}  
+\begin{equation*}
+\begin{split}
+    f(x) = & \frac{2x}{L-1} \\
+    F(x) = & \int_0^{x} \frac{2x}{L-1} dx \\
+         = & \frac{1}{L-1}x^2 \\
+    f(z) = &\frac{3z^2}{(L-1)^3} \\
+    F_d(x) = &  \int  \frac{3x^2}{(L-1)^3}* (L-1) dx \\
+            = & \frac{x^3}{(L-1)^2} \\
+    F_d^{-1}(x) = & \sqrt[3]{x*(L-1)^2 } \\
+    \tilde{T}(x) = & F^{-1}_d (F_X(x)) \\
+                = & \sqrt[3]{(L-1) x^2} 
+\end{split}
+\end{equation*}
+\begin{flushleft}
+    Therefore, $z = cT^\prime(x) = c\sqrt[3]{(L-1) x^2}  $.
+\end{flushleft}  
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% PROBLEM 2 a
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\paragraph{\noindent\textbf{\LARGE{Problem 2, a)}}}  
+  
+\begin{equation*}
+\begin{split}
+    y = & \theta \\ 
+    \frac{\partial }{\partial \theta} \sum_{n = 1}^{N} \rho(x_n - \theta) = & 0 \\
+    \frac{\partial }{\partial \theta} \sum_{n = 1}^{N} (x_n - \theta)^2 = & 0 \\
+    \sum_{n = 1}^{N} -2(x_n - \theta) = & 0 \\
+    \sum_{n = 1}^{N} (x_n) - \sum_{n = 1}^{N} \theta=  & 0 \\
+    \sum_{n = 1}^{N} (x_n) - n \theta=  & 0 \\
+    N \theta = & \sum_{n = 1}^{N} (x_n) \\
+    \theta = & \frac{1}{N} \sum_{n = 1}^{N} (x_n) 
+\end{split}
+\end{equation*}
+    
+\begin{flushleft}
+    Therefore, $y = \theta =  \frac{1}{N} \sum_{n = 1}^{N} (x_n) $, which is the mean value.
+\end{flushleft}  
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% PROBLEM 2 b
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\paragraph{\noindent\textbf{\LARGE{Problem 2, b)}}}  
+  
+\begin{equation*}
+\begin{split}
+    y = & \theta \\ 
+    \frac{\partial }{\partial \theta} \sum_{n = 1}^{N} \rho(x_n - \theta) = & 0 \\
+    \frac{\partial }{\partial \theta} \sum_{n = 1}^{N} |x_n - \theta| = & 0 \\
+        = & \sum_{n = 1}^{N} sign(x_n - \theta) \\
+\end{split}
+\end{equation*}
+    
+\begin{flushleft}
+    Therefore, $y = \theta =  \sum_{n = 1}^{N} sign(x_n - \theta) $, which is the median.
+\end{flushleft}  
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% PROBLEM 2 c
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\paragraph{\noindent\textbf{\LARGE{Problem 2, c)}}}  
+  
+\begin{equation*}
+\begin{split}
+    y = & \theta \\ 
+    \frac{\partial }{\partial \theta} \sum_{n = 1}^{N} \rho(x_n - \theta) = & 0 \\
+    \frac{\partial }{\partial \theta} \sum_{n = 1}^{N} |x_n - \theta|^{0.5} = & 0 \\
+        = & 0.5 \sum_{n = 1}^{N} sign(x_n - \theta) |x_n - \theta| ^{-0.5}
+\end{split}
+\end{equation*}
+    
+\begin{flushleft}
+    Therefore, $y = root_\theta\{0.5 \sum_{n = 1}^{N} sign(x_n - \theta) |x_n - \theta| ^{-0.5}\}$.
+\end{flushleft} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% PROBLEM 2 d
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\paragraph{\noindent\textbf{\LARGE{Problem 2, d)}}}  
+  
+\begin{flushleft}
+    No, it is not linear because of the $|x_n - \theta|$.
+    It is not homogeneous as well because of the $|x_n - \theta|$.
+
+\end{flushleft}
+
+\end{document}

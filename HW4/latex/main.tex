@@ -1,0 +1,106 @@
+\documentclass[11pt]{article}
+\usepackage{scribe}
+\usepackage{graphicx}
+
+% Uncomment the appropriate line
+%\Scribe{Your name}
+
+\Scribes{Frendy Lio Can}
+\LectureDate{October 23, 2020}
+\LectureTitle{Homework Assignment \#4}
+
+%\usepackage[mathcal]{euscript}
+
+
+\begin{document}
+
+\MakeScribeTop
+
+%\paragraph{This is a paragraph heading} Paragraph.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% PROBLEM 1 A
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\paragraph{\noindent\textbf{\LARGE{Problem 1, a)}}}
+
+\begin{flushleft}
+    We know that:
+\end{flushleft} 
+\begin{equation*}
+\begin{split}
+    x[n] \rightarrow & \uparrow U \rightarrow H(e^{i\omega}) \rightarrow y[n] \\
+    & Therefore \\
+    x[m,n] \rightarrow & \uparrow 2 \rightarrow H(e^{i\mu}, e^{i\nu}) \rightarrow y[n] \\
+\end{split}
+\end{equation*}
+
+\begin{equation*}
+\begin{split}
+    h[m,n] = & h[-k, -l] = 
+    \begin{bmatrix}
+        0.25 & 0.5 & 0.25 \\ 
+        0.5 & 1 & 0.5 \\
+        0.25 & 0.5 & 0.25
+    \end{bmatrix} \\
+    x_2[m,n] = & 
+    \begin{bmatrix}
+        0 & 0 & 1 & 0 & 1 \\
+        0 & 0 & 0 & 0 & 0 \\ 
+        0 & 0 & 1 & 0 & 1 \\
+        0 & 0 & 0 & 0 & 0 \\ 
+        0 & 0 & 0 & 0 & 0
+    \end{bmatrix}   \\
+    y[m,n] = &   
+    \begin{bmatrix}
+        0 & 0.5 & 1 & 1 & 1 \\
+        0 & 0.5 & 1 & 1 & 1 \\ 
+        0 & 0.5 & 1 & 1 & 1 \\
+        0 & 0.25 & 0.5 & 0.5 & 0.5 \\ 
+        0 & 0 & 0 & 0 & 0
+    \end{bmatrix}     
+\end{split}
+\end{equation*}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% PROBLEM 1 B
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\paragraph{\noindent\textbf{\LARGE{Problem 1, b)}}}  
+\begin{equation*}
+\begin{split}
+H(e^{i\mu}, e^{i\nu}) = & \sum_{m,n = -1}^1 0.5^{|m+n|} e^{-i(\mu m + \nu n)} \\
+    = & \sum_{m = -1}^1 0.5^{|m|} e^{-i(\mu m)} \sum_{n = -1}^1 0.5^{|n|} e^{-i(\nu n)} \\
+    = & (0.5e^{i\mu} + 1 + 0.5e^{-i\mu})(0.5e^{i\nu} + 1 + 0.5e^{-i\nu}) \\
+    = & (1 + cos \mu) (1 + cos\nu)
+\end{split}
+\end{equation*}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% PROBLEM 1 C
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\paragraph{\noindent\textbf{\LARGE{Problem 1, c)}}}  
+\begin{equation*}
+\begin{split}
+Y(e^{i\mu}, e^{i\nu}) = & \sum_{k,l = 0}^1 H(e^{\frac{i(\mu - 2\pi k)}{2}}, e^{\frac{i(\nu - 2\pi l)}{2}}) 
+X(e^{\frac{i(\mu - 2\pi k)}{2}}, e^{\frac{i(\nu - 2\pi l)}{2}})
+\end{split}
+\end{equation*}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% PROBLEM 1 D
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\paragraph{\noindent\textbf{\LARGE{Problem 1, d)}}}  
+  
+\begin{flushleft}
+The advantages of interpolation methods is that they are simple since they are used to simplify our signals by sampling them.
+It also improves anti-aliasing filter performance and reduces noise. 
+\newline
+\newline
+The disadvantages of interpolation method is that we require a higher sample rate in order to have a good resolution conversion.
+\end{flushleft} 
+    
+
+
+
+
+
+\end{document}

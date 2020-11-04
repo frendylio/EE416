@@ -1,0 +1,86 @@
+\documentclass[11pt]{article}
+\usepackage{scribe}
+\usepackage{graphicx}
+
+% Uncomment the appropriate line
+%\Scribe{Your name}
+
+\Scribes{Frendy Lio Can}
+\LectureDate{October 18, 2020}
+\LectureTitle{Homework Assignment \#3}
+
+%\usepackage[mathcal]{euscript}
+
+
+\begin{document}
+
+\MakeScribeTop
+
+%\paragraph{This is a paragraph heading} Paragraph.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% PROBLEM 1 A
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\paragraph{\noindent\textbf{\LARGE{Problem 1, a)}}}
+
+% Start of Explaining
+  
+\begin{equation*}
+\begin{split}
+    |\nabla f(x,y)| &> T \\
+    \nabla^2 f(x,y) &= 0 
+\end{split}
+\end{equation*}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% PROBLEM 1 B
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\paragraph{\noindent\textbf{\LARGE{Problem 1, b)}}}  
+\begin{equation*}
+\begin{split}
+    \nabla S[m,n] = & [ \frac{S[m+1,n] - S[m,n]}{\Delta x} + \frac{S[m,n+1] - S[m,n]}{\Delta y}] \\
+                  =  & (S[m+1,n] - S[m,n]) + (S[m,n+1] - S[m,n])
+\end{split}
+\end{equation*}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% PROBLEM 1 C
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\paragraph{\noindent\textbf{\LARGE{Problem 1, c)}}}  
+\begin{equation*}
+\begin{split}
+    \Delta S[m,n]   &= \frac{\partial^2 f(x,y)}{\partial x^2} + \frac{\partial^2 f(x,y)}{\partial y^2} \\
+                    &= S[m+2,n] - 2S[m+1,n] + S[m,n] + S[m,n+2] - 2S[m,n+1] + S[m,n] \\
+                    &= S[m+2,n] + S[m,n+2] - 2( S[m+1,n] + S[m,n+1] - S[m,n] )
+\end{split}
+\end{equation*}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% PROBLEM 1 D
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\paragraph{\noindent\textbf{\LARGE{Problem 1, d)}}}  
+  
+\begin{equation*}
+\begin{split}
+    |\nabla S[m,n]| &> T \\
+    \Delta S[m,n] & = 0 
+\end{split}
+\end{equation*}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% PROBLEM 1 E
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\paragraph{\noindent\textbf{\LARGE{Problem 1, e)}}}  
+  
+\begin{flushleft}
+If T is small, too many edges could be detected, causing false alarms to occur.
+\\
+If T is large, too little edges could be detected.
+\\
+Thus, T should be selected based on the situation.
+\end{flushleft} 
+
+
+
+
+\end{document}
