@@ -19,38 +19,6 @@
 
 \refsection{0}
   \datalist[entry]{nty/global//global/global}
-    \entry{Normalization}{article}{}
-      \name{author}{2}{}{%
-        {{hash=ea16b14239418929100a15eb91868330}{%
-           family={Ioffe},
-           familyi={I\bibinitperiod},
-           given={S.},
-           giveni={S\bibinitperiod}}}%
-        {{hash=02825504db1446e3b93f7374eeb35ee2}{%
-           family={Szegedy},
-           familyi={S\bibinitperiod},
-           given={C.},
-           giveni={C\bibinitperiod}}}%
-      }
-      \strng{namehash}{e26a274ebec1d60b0aa06c23664cc75b}
-      \strng{fullhash}{e26a274ebec1d60b0aa06c23664cc75b}
-      \strng{bibnamehash}{e26a274ebec1d60b0aa06c23664cc75b}
-      \strng{authorbibnamehash}{e26a274ebec1d60b0aa06c23664cc75b}
-      \strng{authornamehash}{e26a274ebec1d60b0aa06c23664cc75b}
-      \strng{authorfullhash}{e26a274ebec1d60b0aa06c23664cc75b}
-      \field{sortinit}{I}
-      \field{sortinithash}{9417e9a1288a9371e2691d999083ed39}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{title}{Batch Normalization: Accelerating Deep Network Training by Reducing Internal Covariate Shift}
-      \field{year}{Mar. 2015}
-      \verb{urlraw}
-      \verb http://arxiv.org/abs/1502.03167
-      \endverb
-      \verb{url}
-      \verb http://arxiv.org/abs/1502.03167
-      \endverb
-    \endentry
     \entry{Medium}{article}{}
       \name{author}{1}{}{%
         {{hash=3cf96d301042db7ab189b898478cbab8}{%
@@ -77,6 +45,38 @@
       \endverb
       \verb{url}
       \verb https://medium.com/analytics-vidhya/feature-scaling-and-normalisation-in-a-nutshell-5319af86f89b
+      \endverb
+    \endentry
+    \entry{Normalization}{article}{}
+      \name{author}{2}{}{%
+        {{hash=02825504db1446e3b93f7374eeb35ee2}{%
+           family={Szegedy},
+           familyi={S\bibinitperiod},
+           given={C.},
+           giveni={C\bibinitperiod}}}%
+        {{hash=ea16b14239418929100a15eb91868330}{%
+           family={Ioffe},
+           familyi={I\bibinitperiod},
+           given={S.},
+           giveni={S\bibinitperiod}}}%
+      }
+      \strng{namehash}{042cb2e79055b75c218a9e474237ded2}
+      \strng{fullhash}{042cb2e79055b75c218a9e474237ded2}
+      \strng{bibnamehash}{042cb2e79055b75c218a9e474237ded2}
+      \strng{authorbibnamehash}{042cb2e79055b75c218a9e474237ded2}
+      \strng{authornamehash}{042cb2e79055b75c218a9e474237ded2}
+      \strng{authorfullhash}{042cb2e79055b75c218a9e474237ded2}
+      \field{sortinit}{S}
+      \field{sortinithash}{c319cff79d99c853d775f88277d4e45f}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Batch Normalization: Accelerating Deep Network Training by Reducing Internal Covariate Shift}
+      \field{year}{Mar. 2015}
+      \verb{urlraw}
+      \verb http://arxiv.org/abs/1502.03167
+      \endverb
+      \verb{url}
+      \verb http://arxiv.org/abs/1502.03167
       \endverb
     \endentry
   \enddatalist
